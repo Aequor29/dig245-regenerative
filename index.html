@@ -1,17 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- meta tags, links to css, etc. -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Generative Design</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- visible content goes here -->
-    <h1> Music by the Mood</h1>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Generative Design</title>
+  </head>
+  <body class="background-main">
+    <div class="container-fluid no-padding">
+      <div class="header-section">
+        <h1 class="title-header">Music by Mood</h1>
+      </div>
+      <div class="mood-section">
+        <div class="mood-container">
+          <h2 class="subtitle-header">What is your mood today?</h2>
+          <div class="mood-input-group">
+            <select
+              name="mood-input"
+              class="mood-input-field"
+              aria-label="Mood input"
+              aria-describedby="submit-button"
+            >
+              <option>happy</option>
+              <option>sad</option>
+              <option>exciting</option>
+              <option>scared</option>
+            </select>
+            <div class="input-append">
+              <button class="submit-button" type="submit" id="submit-button">
+                Submit
+              </button>
+            </div>
+          </div>
+          <p class="quote-text">
+            Success usually comes to those who are too busy to be looking for
+            it.
+          </p>
+        </div>
+      </div>
+      <audio id="mood-audio">
+        <source src="" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
     <!-- load javascript after the page elements render -->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>

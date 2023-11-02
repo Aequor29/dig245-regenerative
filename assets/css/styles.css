@@ -1,2 +1,88 @@
 
-/* css */
+
+.background-main {
+  background-color: #ddf5f2;
+}
+
+.container-fluid.no-padding {
+  padding: 0;
+}
+
+.header-section {
+  background-color: #f7d6e0;
+  text-align: center;
+  padding: 4% 0;
+}
+
+.title-header {
+  color: #dd408f;
+  font-family: "Limelight", cursive;
+  font-size: 36px;
+}
+
+.mood-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.mood-container {
+  background-color: #b2f7ef;
+  padding: 5% 3%;
+  border-radius: 10px;
+  width: 768px;
+  max-width: 100%;
+}
+
+.subtitle-header {
+  color: #dd408f;
+  font-family: "Limelight", cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.mood-input-group {
+  display: flex;             
+  align-items: center;       
+  justify-content: center;   
+  margin-bottom: 4%;
+  gap: 10px;                 
+}
+
+.mood-input-field {
+  flex: 0.8;                 
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  background-color: #7BDFF2;
+  color: white;
+}
+
+.input-append .submit-button {
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #7BDFF2;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  cursor: pointer;           
+}
+
+.quote-text {
+  color: #dd408f;
+  font-family: "Roboto Mono", monospace;
+  font-size: 32px;
+}
+/* Dark mode styles */
+body.dark-mode, .dark-mode .header-section{
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+.dark-mode .header, .dark-mode .mood-container {
+  background-color: #2e2e2e; 
+}
